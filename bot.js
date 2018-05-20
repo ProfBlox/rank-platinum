@@ -1,6 +1,11 @@
 var prefix = '!';
 var groupId = 4040978;
 var maximumRank = 13;
+var discord = require('discord.js');
+var roblox = require('roblox-js');
+var client = new discord.Client();
+
+
 
 function isCommand(command, message){
 	var command = command.toLowerCase();
