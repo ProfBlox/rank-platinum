@@ -5,7 +5,36 @@ var discord = require('discord.js');
 var roblox = require('roblox-js');
 var client = new discord.Client();
 
+var discord = require('discord.js');
+var roblox = require('roblox-js');
+var client = new discord.Client();
 
+
+roblox.login({username: "FlairHotelsBot", password: "FlairHotels"}).then((success) => {
+
+}).catch(() => {console.log("Sorry, it failed.");});
+
+
+client.on("ready", () => {
+  client.user.setGame(`Making HL3`);
+  console.log(`Ready to serve on ${client.guilds.size} servers, for ${client.users.size} users.`);
+});
+
+client.on('guildMemberAdd', member => {
+  let guild = member.guild;
+  let user = member.user
+  console.log(`${user.tag} joined ${guild}`)
+});
+
+client.on('guildMemberRemove', member => {
+  let guild = member.guild;
+  let user = member.user
+  console.log(`${user.tag} left ${guild}`)
+});
+
+var prefix = '!';
+var groupId = 4040978;
+var maximumRank = 13;
 
 function isCommand(command, message){
 	var command = command.toLowerCase();
@@ -47,4 +76,4 @@ client.on('message', (message) => {
     	}
     	return;
     }
-});
+client.login(process.env.token)
