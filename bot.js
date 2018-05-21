@@ -9,7 +9,7 @@ roblox.login({username: "FlairHotelsBot", password: "FlairHotels"}).then((succes
 
 
 client.on("ready", () => {
-  client.user.setGame(`Making HL3`);
+  client.user.setGame(`with ranks!`);
   console.log(`Ready to serve on ${client.guilds.size} servers, for ${client.users.size} users.`);
 });
 
