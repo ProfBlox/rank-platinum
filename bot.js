@@ -69,4 +69,6 @@ client.on('message', (message) => {
     	}
     	return;
     }
-bot.login(process.env.token)
+bot.login(process.env.B0T_T0KEN)
+	
+
