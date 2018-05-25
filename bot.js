@@ -1,9 +1,9 @@
 var discord = require('discord.js');
 var roblox = require('roblox-js');
 var client = new discord.Client();
-client.login(process.env.B0T_T0KEN)
+client.login(process.env.token)
 
-roblox.login({username: "FlairHotelsBot", password: "FlairHotels"}).then((success) => {
+roblox.login({username: "Team_PlatinumYT", password: "Bryce2008"}).then((success) => {
 
 }).catch(() => {console.log("Sorry, it failed.");});
 
@@ -26,8 +26,8 @@ client.on('guildMemberRemove', member => {
 });
 
 var prefix = '!';
-var groupId = 4040978;
-var maximumRank = 13;
+var groupId = 3707773;
+var maximumRank = 254;
 
 function isCommand(command, message){
 	var command = command.toLowerCase();
