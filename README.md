@@ -1,2 +1,2 @@
-# rank-flair-hotels
-ranking flair
+# rank-platinum
+ranking plat
